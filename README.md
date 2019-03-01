@@ -12,6 +12,12 @@
 
 > if you think that `Kurumi` can help you，please `star` or `follow` to support me! 😘
 
+<div align=center>
+
+![](./docs/show.gif)
+
+</div>
+
 ## Introduction
 - Imports source code URLs(it must support `UMD`)! most of all, It don't affect global variable as same as `webpack`
 
@@ -77,5 +83,5 @@ Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
 ## Contributing
 Welcome to `pr`!
 
-## Othhers
+## Others
 inspired By [import-http](https://github.com/egoist/import-http)! thx!
