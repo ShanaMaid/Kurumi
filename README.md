@@ -9,6 +9,7 @@
   <img src='https://img.shields.io/npm/dt/kurumi.svg?style=flat-square' alt="downloads">
   <img src='https://img.shields.io/npm/dm/kurumi.svg?style=flat-square' alt="downloads-month">
 </p>
+
 > if you think that `Kurumi` can help you，please `star` or `follow` to support me! 😘
 
 ## Introduction
@@ -72,6 +73,9 @@ Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
 —— From [Date A Live](https://en.wikipedia.org/wiki/Date_A_Live)
 
 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551433129533&di=3f06a5d35dcc885329147ffe59560600&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201811%2F03%2F20181103134800_yKCli.jpeg" width="200" />
-### 
+
 ## Contributing
 Welcome to `pr`!
+
+## Othhers
+inspired By [import-http](https://github.com/egoist/import-http)! thx!
