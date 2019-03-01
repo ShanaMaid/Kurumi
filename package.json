@@ -1,0 +1,23 @@
+{
+  "name": "kurumi",
+  "version": "0.0.1",
+  "description": "use xhr to load umd module",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShanaMaid/Kurumi.git"
+  },
+  "author": "ShanaMaid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShanaMaid/Kurumi/issues"
+  },
+  "homepage": "https://github.com/ShanaMaid/Kurumi#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
