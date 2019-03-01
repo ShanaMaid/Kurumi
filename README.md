@@ -57,7 +57,7 @@ Kurumi('https://unpkg.com/kurumi/lib/Kurumi.min.js')
 
 ### Browser
 ```
-<script src="https://unpkg.com/kurumi/Kurumi.min.js"></script>
+<script src="https://unpkg.com/kurumi/lib/Kurumi.min.js"></script>
 <script>
 Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
 .then((lodash) => {
