@@ -14,7 +14,8 @@
   "main": "./lib/Kurumi.js",
   "typings": "lib/Kurumi.d.ts",
   "scripts": {
-    "build": "rm -rf ./lib && tsc --declaration --outDir lib/ && webpack --config ./cfg/umd.js"
+    "build": "rm -rf ./lib && tsc --declaration --outDir lib/ && webpack --config ./cfg/umd.js",
+    "preversion": "npm run build"
   },
   "repository": {
     "type": "git",
