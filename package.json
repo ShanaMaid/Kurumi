@@ -1,6 +1,6 @@
 {
   "name": "kurumi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "import modules from URL and not affect gloabl varibale",
   "keywords": [
     "http-require",
