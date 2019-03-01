@@ -49,7 +49,7 @@ Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
 ### Webpack
 ```js
 import Kurumi from 'kurumi';
-Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
+Kurumi('https://unpkg.com/kurumi/lib/Kurumi.min.js')
 .then((lodash) => {
   console.log(lodash.template(`Wow! so cool! <%= name %>`)({ name: 'Kurumi!!!' }));
 })
@@ -57,7 +57,7 @@ Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
 
 ### Browser
 ```
-<script src="https://unpkg.com/kurumi/Kurumi.min.js">
+<script src="https://unpkg.com/kurumi/Kurumi.min.js"></script>
 <script>
 Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
 .then((lodash) => {
