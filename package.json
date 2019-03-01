@@ -1,10 +1,20 @@
 {
   "name": "kurumi",
-  "version": "0.0.1",
-  "description": "use xhr to load umd module",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "import modules from URL and not affect gloabl varibale",
+  "keywords": [
+    "http-require",
+    "require",
+    "module",
+    "esmodules",
+    "script",
+    "xhr",
+    "umd"
+  ],
+  "main": "./lib/Kurumi.js",
+  "typings": "lib/Kurumi.d.ts",
   "scripts": {
-    "build": "webpack"
+    "build": "rm -rf ./lib && tsc --declaration --outDir lib/ && webpack --config ./cfg/umd.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +27,13 @@
   },
   "homepage": "https://github.com/ShanaMaid/Kurumi#readme",
   "devDependencies": {
+    "@types/node": "^11.9.6",
+    "ts-loader": "^5.3.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3",
+    "typescript": "^3.3.3333"
   }
 }
