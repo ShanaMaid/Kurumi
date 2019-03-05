@@ -43,16 +43,6 @@ npm install kurumi
 ```
 
 ## Usage
-### Node
-```js
-const Kurumi = require('kurumi');
-Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
-.then((lodash) => {
-  console.log(lodash.template(`Wow! so cool! <%= name %>`)({ name: 'Kurumi!!!' }));
-})
-
-```
-
 ### Webpack
 ```js
 import Kurumi from 'kurumi';
