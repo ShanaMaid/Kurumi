@@ -13,15 +13,27 @@ const downloadScript = async (url: string) => {
   })
 };
 
-const Kurumi = async (url: string) => {
+const npmCache = {};
+
+const Kurumi = async (name: string, url: string) => {
   const moduleContent = await downloadScript(url);
   const script = `(function(){
     var exports = {};
     var module = {};
     module.exports = {};
+    var require = function (name) {
+      const npmModule = npmCache[name];
+      if (npmModule) {
+        return npmModule;
+      } else {
+        throw(new Error('${name} depend on ' + name + ', please first load ${name}' ));
+      }
+    };
   ` + moduleContent + `
-  return module.exports || exports.default;
+  npmCache[name] = module.exports || exports.default;
+  return npmCache[name];
   })()`;
+  npmCache;
   return eval(script);
 };
 export default Kurumi;

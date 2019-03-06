@@ -24,13 +24,13 @@
 
 You can use `await`
 ```js
-const myLodash = await Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js');
+const myLodash = await Kurumi('lodash', 'https://unpkg.com/lodash@4.17.11/lodash.min.js');
 console.log(myLodash.template(`Wow! so cool! <%= name %>`)({ name: 'Kurumi!!!' })); // Wow! so cool! Kurumi!!!
 console.log(lodash) // undefined
 ```
 `or` `.then`
 ```js
-Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
+Kurumi('lodash','https://unpkg.com/lodash@4.17.11/lodash.min.js')
 .then((lodash) => {
   console.log(lodash.template(`Wow! so cool! <%= name %>`)({ name: 'Kurumi!!!' }));
 })
@@ -46,7 +46,7 @@ npm install kurumi
 ### Webpack
 ```js
 import Kurumi from 'kurumi';
-Kurumi('https://unpkg.com/kurumi/lib/Kurumi.min.js')
+Kurumi('lodash', 'https://unpkg.com/lodash@4.17.11/lodash.min.js')
 .then((lodash) => {
   console.log(lodash.template(`Wow! so cool! <%= name %>`)({ name: 'Kurumi!!!' }));
 })
@@ -56,7 +56,7 @@ Kurumi('https://unpkg.com/kurumi/lib/Kurumi.min.js')
 ```
 <script src="https://unpkg.com/kurumi/lib/Kurumi.min.js"></script>
 <script>
-Kurumi('https://unpkg.com/lodash@4.17.11/lodash.min.js')
+Kurumi('lodash', 'https://unpkg.com/lodash@4.17.11/lodash.min.js')
 .then((lodash) => {
   console.log(lodash.template(`Wow! so cool! <%= name %>`)({ name: 'Kurumi!!!' }));
 })
