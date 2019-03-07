@@ -15,6 +15,7 @@
 ## Introduction
 -  Install npm dependencies that run directly in the browser. No Browserify, Webpack or import maps required.
 - Imports source code URLs(it must support `UMD`)! most of all, It don't affect global variable as same as `webpack`
+- `Browser` will cahce `js`, use disk-cache when reload modules!
 
 ```js
 const kurumi = new Kurumi({
